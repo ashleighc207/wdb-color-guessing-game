@@ -7,6 +7,7 @@ let messageDisplay = document.querySelector("#message");
 let h1 = document.querySelector("h1");
 let resetButton = document.getElementById("reset");
 let modeButtons = document.querySelectorAll(".mode");
+let banner = document.querySelector('.header-banner');
 
 
 init();
@@ -23,7 +24,7 @@ function setupModeButtons(){
 			modeButtons[0].classList.remove("selected");
 			modeButtons[1].classList.remove("selected");
 			this.classList.add("selected");
-			this.textContent === "Easy" ? numSquares =3: numSquares = 6;
+			this.textContent === "Easy" ? numSquares =3 : numSquares = 6;
 			reset();
 		});
 	}
@@ -37,7 +38,7 @@ function setupSquares(){
 				messageDisplay.textContent = "Correct!";
 				resetButton.textContent = "Play Again?";
 				changeColors(clickedColor);
-				h1.style.background = clickedColor;
+				banner.style.background = clickedColor;
 			} else {
 				this.style.background = "#232323";
 				messageDisplay.textContent = "Try Again";
@@ -60,7 +61,7 @@ function reset(){
 			squares[i].style.display = "none";
 		}
 	}
-	h1.style.background = "cornflowerblue";
+	banner.style.background = "cornflowerblue";
 }
 
 resetButton.addEventListener("click", function(){
