@@ -38,7 +38,7 @@ body, html {
 	width: 100%;
 }
 .selected {
-	background-color:cornflowerblue;
+	background-color: cornflowerblue;
 	color:white;
 }
 #colorDisplay{
@@ -71,8 +71,8 @@ body, html {
 }
 
 @media screen and (max-width: 600px){
-	#colorDisplay {
-		font-size: 2.5em;
+	.header-banner {
+		font-size: .7em;
 	}
 	.heading-one {
 		margin: .3em;
