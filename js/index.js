@@ -40,7 +40,7 @@ function setupSquares(){
 				changeColors(clickedColor);
 				banner.style.background = clickedColor;
 			} else {
-				this.style.background = "#232323";
+				this.style.background = "#FFFFFF";
 				messageDisplay.textContent = "Try Again";
 			}
 		});
@@ -61,7 +61,6 @@ function reset(){
 			squares[i].style.display = "none";
 		}
 	}
-	banner.style.background = "cornflowerblue";
 }
 
 resetButton.addEventListener("click", function(){
